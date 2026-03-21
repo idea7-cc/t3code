@@ -15,6 +15,15 @@ You can also just install the desktop app. It's cooler.
 
 Install the [desktop app from the Releases page](https://github.com/pingdotgg/t3code/releases)
 
+## Local development
+
+```bash
+bun run sync:upstream
+bun run dev
+```
+
+`bun run sync:upstream` expects a clean local `main`, fast-forwards from `upstream/main`, pushes `origin/main`, runs `bun install`, then runs `bun fmt`, `bun lint`, and `bun typecheck`.
+
 ## Some notes
 
 We are very very early in this project. Expect bugs.

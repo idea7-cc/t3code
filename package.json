@@ -22,6 +22,7 @@
   },
   "type": "module",
   "scripts": {
+    "sync:upstream": "node scripts/sync-upstream.ts",
     "dev": "node scripts/dev-runner.ts dev",
     "dev:server": "node scripts/dev-runner.ts dev:server",
     "dev:web": "node scripts/dev-runner.ts dev:web",
